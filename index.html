@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Tip calculator app</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <header>
+        <img src="./images/logo.svg" alt="Logo" class="mx-auto py-10">
+    </header>
+
+    <main id="main"
+        class="container md:w-3/5 flex flex-col md:flex-row mx-auto items-stretch rounded-lg md:mt-5 p-5 gap-7 md:gap-0">
+        <section id="calculator" class="mx-4 w-10/12 md:w-1/2 rounded-lg h-5/6">
+            <form class="mb-5">
+                <div class="pb-1">
+                    <label for="bill" class="text-xs dark-grayish-cyan">Bill</label>
+                </div>
+                <div class="flex relative items-center">
+                    <img src="./images/icon-dollar.svg" alt="" class="absolute left-2">
+                    <input type="number" id="bill" name="bill" placeholder="0" class="w-full p-2 rounded-md">
+                </div>
+            </form>
+            <p class="text-xs dark-grayish-cyan pb-2">Select Tip %</p>
+            <div class="grid grid-cols-2 md:grid-cols-3 mb-5 gap-2">
+                <button class="section1-button rounded-md" value="0.05">5%</button>
+                <button class="section1-button rounded-md" value="0.10">10%</button>
+                <button class="section1-button rounded-md" value="0.15">15%</button>
+                <button class="section1-button rounded-md" value="0.25">25%</button>
+                <button class="section1-button rounded-md" value="0.50">50%</button>
+                <form>
+                    <input type="number" id="custom" name="custom" placeholder="Custom" class="w-full p-2 rounded-md">
+                </form>
+            </div>
+
+            <form>
+                <div class="md:flex md:justify-between pb-1">
+                    <label for="people" class="text-xs dark-grayish-cyan">Number of People</label>
+                    <p id="alert" class="text-xs cyan hidden">Minimum 1</p>
+                </div>
+                <div class="flex relative items-center">
+                    <img src="./images/icon-person.svg" alt="" class="absolute left-2">
+                    <input type="number" id="people" name="people" placeholder="1" class="w-full p-2 rounded-md">
+                </div>
+            </form>
+        </section>
+
+        <section id="result-section" class="mx-4 w-10/12 md:w-1/2 rounded-lg mb-5 md:mb-0">
+            <div class="flex justify-between pt-3 ps-3 pe-3 md:pt-5 md:ps-5 md:pe-5">
+                <div>
+                    <p class="white text-[14px] md:text-[16px]">Tip Amount</p>
+                    <p class="dark-grayish-cyan text-[12px] md:text-[14px]">/ person</p>
+                </div>
+                <span id="tip" class="cyan text-[26px] md:text-3xl">$0.00</span>
+            </div>
+            <div class="flex justify-between pt-3 ps-3 pe-3 pb-5 md:pb-12 md:pt-5 md:ps-5 md:pe-5">
+                <div>
+                    <p class="white text-[14px] md:text-[16px]">Total</p>
+                    <p class="dark-grayish-cyan text-[12px] md:text-[14px]">/ person</p>
+                </div>
+                <span id="tip-total" class="cyan text-[26px] md:text-3xl">$0.00</span>
+            </div>
+            <div class="flex justify-center pb-5">
+                <button id="reset" class="section2-button w-10/12 p-1 text-sm rounded-md md:mt-10">RESET</button>
+            </div>
+        </section>
+
+    </main>
+
+    <div class=" attribution mt-14">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Berkay Bideci</a>.
+    </div>
+
+    <script defer src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 24px;
+    font-family: 'Space Mono', monospace;
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+}
+
+input {
+    text-align: right;
+    height: 48px;
+    background-color: hsl(189, 41%, 97%);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none;
+}
+
+.dark-grayish-cyan {
+    color: hsl(186, 14%, 43%);
+}
+
+.white {
+    color: hsl(0, 0%, 100%);
+}
+
+.cyan {
+    color: hsl(172, 67%, 45%);
+}
+
+#main {
+    background-color: hsl(0, 0%, 100%);
+}
+
+#result-section {
+    background-color: hsl(183, 100%, 15%);
+}
+
+.section1-button {
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(0, 0%, 100%);
+    padding: 5px;
+    height: 48px;
+}
+
+.section1-button:hover {
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+}
+
+.section1-button-active {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+.section2-button {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    padding: 5px;
+    height: 48px;
+}
+
+.section2-button:hover {
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
